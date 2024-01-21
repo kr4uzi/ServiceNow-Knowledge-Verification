@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a14e123e97bb75503c2d3f56f053af03" label="Answer" max_length="40" name="x_376096_knowver_answer" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Correct" max_length="40" name="correct" type="boolean"/>
+        <element label="Question" max_length="32" name="question" reference="x_376096_knowver_question" type="reference"/>
+        <element label="Text" max_length="8000" name="text" type="string"/>
+        <element label="Text" max_length="8000" name="text_html" type="html"/>
+        <index name="index">
+            <element name="question"/>
+        </index>
+    </element>
+</database>

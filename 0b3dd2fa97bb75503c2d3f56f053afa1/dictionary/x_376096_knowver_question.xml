@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7e9dd23e97bb75503c2d3f56f053aff0" label="Question" max_length="40" name="x_376096_knowver_question" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Skill" max_length="32" name="skill" reference="cmn_skill" type="reference"/>
+        <element display="true" label="Text" max_length="4000" name="text" type="string"/>
+        <index name="index">
+            <element name="skill"/>
+        </index>
+    </element>
+</database>
